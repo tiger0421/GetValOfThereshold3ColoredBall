@@ -20,7 +20,9 @@ cv2.createTrackbar("S", "Yellow", 0, 255, nothing)
 cv2.createTrackbar("V", "Yellow", 0, 255, nothing)
 
 while flag == 1:
+#%%%%%%% input image name below
 	img = cv2.imread('1530255752584.jpg')
+#%%%%%%%
 
 	hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 	hsv = cv2.morphologyEx(hsv, cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
